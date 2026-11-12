@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="bafBg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#071426" />
+      <stop offset="100%" stop-color="#102A43" />
+    </linearGradient>
+    <linearGradient id="bafCyanTeal" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#36D9FF" />
+      <stop offset="100%" stop-color="#22D3B6" />
+    </linearGradient>
+    <linearGradient id="bafGold" x1="16" y1="40" x2="48" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFBE55" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#bafBg)" />
+  <rect x="1.5" y="1.5" width="61" height="61" rx="14.5" stroke="#36D9FF" stroke-opacity="0.35" stroke-width="1.5" />
+  <!-- Geometric Forge Anvil + Neural Lattice -->
+  <path d="M32 10L50 21V39L32 50L14 39V21L32 10Z" stroke="url(#bafCyanTeal)" stroke-width="2.5" stroke-linejoin="round" />
+  <path d="M20 26L32 33L44 26" stroke="#36D9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M32 33V48" stroke="#22D3B6" stroke-width="2.2" stroke-linecap="round" />
+  <path d="M22 44H42" stroke="url(#bafGold)" stroke-width="3" stroke-linecap="round" />
+  <circle cx="32" cy="10" r="3" fill="#36D9FF" />
+  <circle cx="50" cy="21" r="2.5" fill="#22D3B6" />
+  <circle cx="14" cy="21" r="2.5" fill="#22D3B6" />
+  <circle cx="32" cy="33" r="3.5" fill="#FFBE55" />
+</svg>

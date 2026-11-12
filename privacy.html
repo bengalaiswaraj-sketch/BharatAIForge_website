@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Notice | Bharat AI Forge</title>
+  <meta
+    name="description"
+    content="Privacy Notice for Bharat AI Forge — explaining how registration and inquiry details are collected, transmitted, and handled."
+  />
+  <meta name="theme-color" content="#071426" />
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;700&amp;family=Manrope:wght@700;800&amp;display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/variables.css" />
+  <link rel="stylesheet" href="./css/components.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+</head>
+<body>
+  <a href="#privacy-main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header is-scrolled" role="banner">
+    <div class="container nav-container">
+      <a href="./index.html" class="brand-logo" aria-label="Return to Bharat AI Forge Home">
+        <img src="./assets/icons/favicon.svg" alt="" width="38" height="38" class="brand-logo__mark" />
+        <span class="brand-logo__text">
+          <span class="brand-logo__name">BHARAT <span>AI FORGE</span></span>
+          <span class="brand-logo__tag">India AI Ready 2030</span>
+        </span>
+      </a>
+      <div class="nav-actions">
+        <a href="./index.html#register" class="btn btn-primary btn-sm">
+          <span>← Back to Program &amp; Registration</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="privacy-main" class="section section-dark" style="padding-top: 7.5rem; min-height: 85vh;">
+    <div class="container" style="max-width: 860px;">
+      <div class="eyebrow">
+        <span class="eyebrow-dot" aria-hidden="true"></span>
+        <span>DATA TRANSPARENCY &amp; PRIVACY NOTICE</span>
+      </div>
+      <h1 class="section-title" style="margin-bottom: 1rem;">
+        Privacy Notice
+      </h1>
+      <p style="color: var(--color-text-muted-dark); margin-bottom: 2.25rem;">
+        This Privacy Notice explains what personal information is collected through the Bharat AI Forge website, why it is collected, how it is transmitted to the program registration service, and how participants may submit inquiries regarding their data.
+      </p>
+
+      <div style="display: grid; gap: 1.5rem;">
+        <section class="card-dark">
+          <h2 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--color-electric-cyan); margin-bottom: 0.65rem;">
+            1. What Personal Data Is Collected
+          </h2>
+          <p style="color: var(--color-text-muted-dark); font-size: 0.94rem; margin-bottom: 0.75rem;">
+            When you voluntarily submit the <strong>Register Your Interest</strong> or <strong>Ask a Question</strong> form on this website, we collect only the fields you explicitly enter:
+          </p>
+          <ul style="color: var(--color-text-on-dark); font-size: 0.92rem; display: grid; gap: 0.4rem; padding-left: 1rem;">
+            <li>• <strong>First Name &amp; Last Name</strong> (<code>first_name</code>, <code>last_name</code>)</li>
+            <li>• <strong>Email Address</strong> (<code>email</code>)</li>
+            <li>• <strong>Mobile Number</strong> (<code>mobile</code>, normalized to E.164 format such as <code>+91...</code>)</li>
+            <li>• <strong>Institute / College Name</strong> (<code>institute_name</code>)</li>
+            <li>• <strong>Year of Graduation</strong> (<code>year_of_graduation</code>)</li>
+            <li>• <strong>Program Areas of Interest / Inquiry Question</strong> (encoded in the <code>description</code> field)</li>
+          </ul>
+          <p style="color: var(--color-text-subtle-dark); font-size: 0.85rem; margin-top: 0.75rem;">
+            This static website does not store personally identifiable registration information in browser <code>localStorage</code>, <code>sessionStorage</code>, or URL query parameters, and does not log personal form submissions in the browser console.
+          </p>
+        </section>
+
+        <section class="card-dark">
+          <h2 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--color-ai-teal); margin-bottom: 0.65rem;">
+            2. Why Registration &amp; Inquiry Details Are Collected
+          </h2>
+          <p style="color: var(--color-text-muted-dark); font-size: 0.94rem;">
+            Your details are collected solely for legitimate educational program administration purposes:
+          </p>
+          <ul style="color: var(--color-text-on-dark); font-size: 0.92rem; display: grid; gap: 0.4rem; margin-top: 0.65rem; padding-left: 1rem;">
+            <li>• Recording your expression of interest in Bharat AI Forge cohorts and learning tracks.</li>
+            <li>• Communicating program schedules, curriculum updates, onboarding steps, and eligibility details.</li>
+            <li>• Responding to student, graduate, or engineering college partnership questions submitted through the inquiry form.</li>
+            <li>• Understanding aggregate student interest across AI engineering tracks and academic graduation years.</li>
+          </ul>
+        </section>
+
+        <section class="card-dark">
+          <h2 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--color-accent-gold); margin-bottom: 0.65rem;">
+            3. Transmission to the Program Registration Service
+          </h2>
+          <p style="color: var(--color-text-muted-dark); font-size: 0.94rem;">
+            Upon your explicit consent and form submission, your form data is transmitted securely over HTTPS via an encrypted <code>POST</code> request (<code>application/json</code>) to the Bharat AI Forge registration backend service hosted on Google Cloud Run:
+          </p>
+          <div style="margin-top: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; background: rgba(7, 20, 38, 0.85); border: 1px solid rgba(54, 217, 255, 0.22); font-family: var(--font-mono); font-size: 0.8rem; color: var(--color-electric-cyan); word-break: break-all;">
+            https://bharatai-forge-api-679998727179.asia-south1.run.app/register
+          </div>
+        </section>
+
+        <section class="card-dark">
+          <h2 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--color-white); margin-bottom: 0.65rem;">
+            4. Data Handling, Retention &amp; Contacting the Operator
+          </h2>
+          <p style="color: var(--color-text-muted-dark); font-size: 0.94rem; margin-bottom: 0.75rem;">
+            Data access, correction, or deletion requests are handled by the program operator in accordance with the organization's actual internal data governance policy and applicable Indian laws.
+          </p>
+          <div style="padding: 1rem 1.15rem; border-radius: 10px; background: rgba(255, 190, 85, 0.1); border: 1px solid rgba(255, 190, 85, 0.35); font-size: 0.86rem; color: var(--color-text-on-dark);">
+            <strong style="color: var(--color-accent-gold); display: block; margin-bottom: 0.35rem;">
+              Operator Policy &amp; Contact Placeholders (To Be Configured by Program Operator):
+            </strong>
+            <ul style="display: grid; gap: 0.35rem; color: var(--color-text-muted-dark);">
+              <li>• <strong>Data Controller / Operator Name:</strong> [Placeholder: Official Legal Entity Name for Bharat AI Forge]</li>
+              <li>• <strong>Privacy / Data Requests Contact Email:</strong> [Placeholder: Official Privacy Contact Email]</li>
+              <li>• <strong>Data Retention Period:</strong> [Placeholder: Subject to the organization's official data retention policy]</li>
+            </ul>
+            <p style="margin-top: 0.65rem; font-size: 0.82rem; color: var(--color-text-muted-dark);">
+              Until dedicated privacy contact channels are published above, you may also submit data-related questions using the <strong>Ask a Question</strong> mode on the <a href="./index.html#register" style="color: var(--color-electric-cyan); text-decoration: underline;">main registration form</a> by selecting the <em>Other</em> category.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo" style="padding-block: 2rem;">
+    <div class="container footer-bottom" style="padding-top: 0;">
+      <div>© 2026 Bharat AI Forge. All rights reserved.</div>
+      <div><a href="./index.html" style="color: var(--color-electric-cyan);">Return to Home Page →</a></div>
+    </div>
+  </footer>
+</body>
+</html>

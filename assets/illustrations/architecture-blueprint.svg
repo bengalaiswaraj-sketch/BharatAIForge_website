@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 220" fill="none">
+  <rect width="800" height="220" rx="16" fill="#071426" />
+  <rect x="1" y="1" width="798" height="218" rx="15" stroke="#36D9FF" stroke-opacity="0.22" />
+  <!-- Pipeline Boxes -->
+  <g font-family="Inter, sans-serif" font-size="12" font-weight="600">
+    <rect x="28" y="65" width="135" height="90" rx="10" fill="#102A43" stroke="#36D9FF" stroke-width="1.5" />
+    <text x="95" y="102" fill="#36D9FF" text-anchor="middle">01. INGEST &amp; EMBED</text>
+    <text x="95" y="124" fill="#9FB3C8" font-size="10" font-weight="400" text-anchor="middle">Chunking + Vector DB</text>
+
+    <path d="M168 110H212" stroke="#36D9FF" stroke-width="2" stroke-dasharray="4 4" />
+    <polygon points="212,105 222,110 212,115" fill="#36D9FF" />
+
+    <rect x="226" y="65" width="145" height="90" rx="10" fill="#102A43" stroke="#22D3B6" stroke-width="1.5" />
+    <text x="298" y="102" fill="#22D3B6" text-anchor="middle">02. HYBRID RAG</text>
+    <text x="298" y="124" fill="#9FB3C8" font-size="10" font-weight="400" text-anchor="middle">Retrieval + Reranking</text>
+
+    <path d="M376 110H420" stroke="#22D3B6" stroke-width="2" stroke-dasharray="4 4" />
+    <polygon points="420,105 430,110 420,115" fill="#22D3B6" />
+
+    <rect x="434" y="65" width="145" height="90" rx="10" fill="#102A43" stroke="#FFBE55" stroke-width="1.5" />
+    <text x="506" y="102" fill="#FFBE55" text-anchor="middle">03. AGENTIC MCP</text>
+    <text x="506" y="124" fill="#9FB3C8" font-size="10" font-weight="400" text-anchor="middle">LangGraph + Google ADK</text>
+
+    <path d="M584 110H628" stroke="#FFBE55" stroke-width="2" stroke-dasharray="4 4" />
+    <polygon points="628,105 638,110 628,115" fill="#FFBE55" />
+
+    <rect x="642" y="65" width="130" height="90" rx="10" fill="#102A43" stroke="#36D9FF" stroke-width="1.5" />
+    <text x="707" y="102" fill="#FFFFFF" text-anchor="middle">04. CLOUD DEPLOY</text>
+    <text x="707" y="124" fill="#36D9FF" font-size="10" font-weight="400" text-anchor="middle">FastAPI + Docker CI</text>
+  </g>
+</svg>

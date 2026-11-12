@@ -1,0 +1,112 @@
+/* ==========================================================================
+   Bharat AI Forge — Motion, Scroll Reveal & Keyframe Animations (animations.css)
+   ========================================================================== */
+
+/* Scroll-Triggered Reveal Classes */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 650ms var(--ease-out), transform 650ms var(--ease-out);
+  will-change: opacity, transform;
+}
+
+.reveal.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 {
+  transition-delay: 90ms;
+}
+
+.reveal-delay-2 {
+  transition-delay: 180ms;
+}
+
+.reveal-delay-3 {
+  transition-delay: 270ms;
+}
+
+/* Subtle Floating & Pulse Keyframes */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes floatReverse {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.12);
+  }
+}
+
+@keyframes dashFlow {
+  to {
+    stroke-dashoffset: -36;
+  }
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-float {
+  animation: floatSlow 5.5s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: floatReverse 6.5s ease-in-out infinite;
+}
+
+.animate-pulse-dot {
+  animation: pulseGlow 2.4s ease-in-out infinite;
+}
+
+.svg-flow-line {
+  stroke-dasharray: 6 6;
+  animation: dashFlow 2.5s linear infinite;
+}
+
+/* Pause decorative animations when off-screen or when reduced motion is preferred */
+.offscreen-paused .animate-float,
+.offscreen-paused .animate-float-delayed,
+.offscreen-paused .svg-flow-line {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .animate-float,
+  .animate-float-delayed,
+  .animate-pulse-dot,
+  .svg-flow-line {
+    animation: none !important;
+  }
+}

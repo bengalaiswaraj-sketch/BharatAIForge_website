@@ -1,0 +1,16 @@
+{
+  "initiative": "Bharat AI Forge",
+  "campaign": "India AI Ready 2030",
+  "sources_found": [
+    {
+      "source_file": "AI-Job-Ready-Programme-Booklet.pdf",
+      "format": "pdf",
+      "page_count": 1,
+      "pages": [
+        {
+          "note": "Install pypdf (`pip install pypdf`) to re-extract PDF text, or inspect data/statistics.js and data/curriculum.js where all 15 pages of AI-Job-Ready-Programme-Booklet.pdf are already codified."
+        }
+      ]
+    }
+  ]
+}

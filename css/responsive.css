@@ -1,0 +1,115 @@
+/* ==========================================================================
+   Bharat AI Forge — Responsive Breakpoint Rules (responsive.css)
+   Tested across 320px, 375px, 430px, 768px, 1024px, 1440px, and 1920px
+   ========================================================================== */
+
+@media (max-width: 1180px) {
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: inline-flex;
+  }
+
+  .nav-links.is-open {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: fixed;
+    top: 68px;
+    left: 0;
+    right: 0;
+    background: rgba(7, 20, 38, 0.98);
+    border-bottom: 1px solid rgba(54, 217, 255, 0.3);
+    padding: 1.25rem var(--container-pad);
+    gap: 0.45rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+  }
+
+  .nav-links.is-open .nav-link {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
+
+  .hero-grid,
+  .pillars-network-layout,
+  .hands-on-split,
+  .github-simulator-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .booklet-vacuum-strip,
+  .rollout-timeline-grid,
+  .journey-16w-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 820px) {
+  .stats-grid-3,
+  .builder-shift-grid,
+  .progression-steps-4,
+  .module-body-grid,
+  .resume-compare-grid,
+  .form-grid-2,
+  .interests-checkbox-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .career-progression-chain {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-floating-badge--top,
+  .hero-floating-badge--bottom {
+    position: static;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero-stats-grid,
+  .hero-agent-strip,
+  .pillars-grid-6,
+  .booklet-vacuum-strip,
+  .rollout-timeline-grid,
+  .journey-16w-grid,
+  .github-hotspot-group,
+  .github-repo-preview-grid,
+  .segmented-tabs,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .nav-actions .btn {
+    padding: 0.55rem 0.85rem;
+    font-size: 0.74rem;
+  }
+
+  .floating-bar {
+    right: 0.85rem;
+    bottom: 0.85rem;
+  }
+
+  .floating-cta {
+    padding: 0.65rem 1rem;
+    font-size: 0.75rem;
+  }
+}

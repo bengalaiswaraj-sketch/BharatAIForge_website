@@ -1,0 +1,86 @@
+/* ==========================================================================
+   Bharat AI Forge — Brand Design Tokens & Custom Properties (variables.css)
+   ========================================================================== */
+
+:root {
+  /* Core Brand Palette (Required Specification) */
+  --color-primary-dark: #071426;
+  --color-secondary-navy: #102A43;
+  --color-electric-cyan: #36D9FF;
+  --color-ai-teal: #22D3B6;
+  --color-accent-gold: #FFBE55;
+  --color-white: #FFFFFF;
+  --color-light-bg: #F5F8FC;
+  --color-text-dark: #102033;
+
+  /* Extended Surface & Semantic Tokens */
+  --color-dark-elevated: #0B1D35;
+  --color-dark-card: rgba(16, 42, 67, 0.68);
+  --color-dark-card-solid: #0D223A;
+  --color-dark-border: rgba(54, 217, 255, 0.18);
+  --color-dark-border-strong: rgba(54, 217, 255, 0.42);
+  --color-text-on-dark: #F8FAFC;
+  --color-text-muted-dark: #A3B8CC;
+  --color-text-subtle-dark: #7B93AB;
+
+  --color-light-surface: #FFFFFF;
+  --color-light-elevated: #EBF1F8;
+  --color-light-border: #D5E1EE;
+  --color-light-border-strong: #B4C8DF;
+  --color-text-muted-light: #3E546C;
+  --color-text-subtle-light: #5C728A;
+
+  /* Status Colors */
+  --color-success: #10B981;
+  --color-success-bg: rgba(16, 185, 129, 0.14);
+  --color-error: #F43F5E;
+  --color-error-bg: rgba(244, 63, 94, 0.14);
+  --color-warning: #F59E0B;
+
+  /* Gradients */
+  --grad-brand-primary: linear-gradient(135deg, #36D9FF 0%, #22D3B6 100%);
+  --grad-brand-text: linear-gradient(95deg, #FFFFFF 0%, #36D9FF 55%, #22D3B6 100%);
+  --grad-cyan-gold: linear-gradient(90deg, #36D9FF 0%, #22D3B6 50%, #FFBE55 100%);
+  --grad-dark-hero: radial-gradient(circle at 78% 28%, rgba(54, 217, 255, 0.16) 0%, rgba(34, 211, 182, 0.06) 35%, rgba(7, 20, 38, 0) 70%),
+                    linear-gradient(180deg, #071426 0%, #0A1B32 60%, #071426 100%);
+  --grad-dark-section: linear-gradient(180deg, #071426 0%, #0C213B 50%, #071426 100%);
+
+  /* Typography */
+  --font-heading: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+
+  /* Fluid Type Scale */
+  --text-xs: clamp(0.75rem, 0.72rem + 0.15vw, 0.8125rem);
+  --text-sm: clamp(0.84rem, 0.8rem + 0.2vw, 0.9375rem);
+  --text-base: clamp(0.95rem, 0.92rem + 0.2vw, 1.0625rem);
+  --text-lg: clamp(1.08rem, 1.02rem + 0.3vw, 1.25rem);
+  --text-xl: clamp(1.25rem, 1.15rem + 0.45vw, 1.5rem);
+  --text-2xl: clamp(1.5rem, 1.32rem + 0.8vw, 2rem);
+  --text-3xl: clamp(1.85rem, 1.55rem + 1.4vw, 2.75rem);
+  --text-4xl: clamp(2.25rem, 1.8rem + 2.1vw, 3.65rem);
+
+  /* Spacing & Layout */
+  --container-max: 1280px;
+  --container-pad: clamp(1.15rem, 3.5vw, 2.5rem);
+  --section-py: clamp(4.5rem, 8vw, 7.25rem);
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-dark-sm: 0 8px 24px -6px rgba(2, 8, 18, 0.55);
+  --shadow-dark-lg: 0 20px 50px -12px rgba(2, 8, 18, 0.75);
+  --shadow-cyan-glow: 0 0 28px rgba(54, 217, 255, 0.28);
+  --shadow-light-sm: 0 6px 20px -4px rgba(16, 32, 51, 0.06);
+  --shadow-light-lg: 0 20px 44px -12px rgba(16, 32, 51, 0.12);
+
+  /* Transitions */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-base: 300ms cubic-bezier(0.16, 1, 0.3, 1);
+}
